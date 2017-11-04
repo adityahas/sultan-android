@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.screens.onboarding;
+package com.adityahas.sultan.screens.onboarding;
 
 /**
  * Created by adityahadi on 04/11/17.

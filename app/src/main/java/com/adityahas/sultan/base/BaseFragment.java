@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.base;
+package com.adityahas.sultan.base;
 
 import android.content.Context;
 import android.os.Bundle;

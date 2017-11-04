@@ -1,11 +1,11 @@
-package com.adityahas.sultan.activities.screens.home;
+package com.adityahas.sultan.screens.home;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.adityahas.sultan.activities.base.BaseActivity;
+import com.adityahas.sultan.base.BaseActivity;
 
 /**
  * Created by adityahadi on 05/11/17.

@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.base;
+package com.adityahas.sultan.base;
 
 /**
  * Created by adityahadi on 04/11/17.

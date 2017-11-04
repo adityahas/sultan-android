@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.utilities;
+package com.adityahas.sultan.utilities;
 
 import android.util.Log;
 

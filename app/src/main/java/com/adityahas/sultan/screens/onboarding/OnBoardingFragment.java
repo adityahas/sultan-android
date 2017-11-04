@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.screens.onboarding;
+package com.adityahas.sultan.screens.onboarding;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,10 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.adityahas.sultan.R;
-import com.adityahas.sultan.activities.base.BaseFragment;
-import com.adityahas.sultan.activities.screens.home.HomeActivity;
-import com.adityahas.sultan.activities.utilities.FragmentUtil;
-import com.adityahas.sultan.activities.utilities.Logger;
+import com.adityahas.sultan.base.BaseFragment;
+import com.adityahas.sultan.screens.home.HomeActivity;
+import com.adityahas.sultan.utilities.FragmentUtil;
+import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

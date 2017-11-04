@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.utilities;
+package com.adityahas.sultan.utilities;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;

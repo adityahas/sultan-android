@@ -1,11 +1,10 @@
-package com.adityahas.sultan.activities;
+package com.adityahas.sultan;
 
 import android.os.Bundle;
 
-import com.adityahas.sultan.R;
-import com.adityahas.sultan.activities.base.BaseActivity;
-import com.adityahas.sultan.activities.screens.onboarding.OnBoardingActivity;
-import com.adityahas.sultan.activities.utilities.Logger;
+import com.adityahas.sultan.base.BaseActivity;
+import com.adityahas.sultan.screens.onboarding.OnBoardingActivity;
+import com.adityahas.sultan.utilities.Logger;
 
 public class LaunchScreenActivity extends BaseActivity {
 

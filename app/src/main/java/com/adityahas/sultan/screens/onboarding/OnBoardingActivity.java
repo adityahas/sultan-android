@@ -1,4 +1,4 @@
-package com.adityahas.sultan.activities.screens.onboarding;
+package com.adityahas.sultan.screens.onboarding;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.adityahas.sultan.R;
-import com.adityahas.sultan.activities.base.BaseActivity;
-import com.adityahas.sultan.activities.utilities.FragmentUtil;
-import com.adityahas.sultan.activities.utilities.Logger;
+import com.adityahas.sultan.base.BaseActivity;
+import com.adityahas.sultan.utilities.FragmentUtil;
+import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
 
