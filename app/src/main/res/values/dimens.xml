@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+    <dimen name="text_size_xxxlarge">22sp</dimen>
+
+    <!-- Material Design related -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_small_x">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_medium_x">20dp</dimen>
+    <dimen name="margin_medium2">22dp</dimen>
+    <dimen name="margin_medium_large">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_large_x">40dp</dimen>
+    <dimen name="margin_extra_large">48dp</dimen>
+
+    <dimen name="material_design_cardview_corner_radius">2dp</dimen>
+    <dimen name="material_design_cardview_elevation">2dp</dimen>
+    <dimen name="material_design_cardview_elevation_state_picked">8dp</dimen>
+    <dimen name="material_design_fab_elevation">6dp</dimen>
+    <dimen name="material_design_fab_elevation_mini">4dp</dimen>
+    <dimen name="material_design_fab_elevation_state_pressed">12dp</dimen>
+    <dimen name="material_design_fab_size_mini">40dp</dimen>
+    <dimen name="material_design_fab_size_normal">56dp</dimen>
+    <dimen name="material_design_keyline_four">2dp</dimen>
+    <dimen name="material_design_keyline_one">16dp</dimen>
+    <dimen name="material_design_keyline_three">4dp</dimen>
+    <dimen name="material_design_keyline_two">8dp</dimen>
+    <dimen name="material_design_listview_item_height">56dp</dimen>
+    <dimen name="material_design_listview_item_height_extended">72dp</dimen>
+    <dimen name="material_design_navigation_drawer_item_icon_size">24dp</dimen>
+    <dimen name="material_design_navigation_drawer_width">300dp</dimen>
+    <dimen name="material_design_snackbar_elevation">6dp</dimen>
+    <dimen name="material_design_snackbar_height">48dp</dimen>
+    <dimen name="material_design_snackbar_sides_padding">24dp</dimen>
+    <dimen name="material_design_switch_elevation">1dp</dimen>
+    <dimen name="material_design_tablayout_height">48dp</dimen>
+    <dimen name="material_design_toolbar_elevation">4dp</dimen>
+    <dimen name="material_design_toolbar_height">56dp</dimen>
+    <dimen name="material_design_toolbar_height_extended">112dp</dimen>
+
+</resources>
