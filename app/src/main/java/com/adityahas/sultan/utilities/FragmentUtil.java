@@ -39,7 +39,7 @@ public class FragmentUtil {
         }
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        if (fragmentManager.findFragmentByTag(fragmentTAG) == null) {
+        if (fragmentManager.findFragmentByTag(fragmentTAG) == null || clearBackStack) {
             // logger.error("Fragment is not added, add it: " + fragmentTAG);
             fragmentTransaction.replace(containerViewId, fragment, fragmentTAG);
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
