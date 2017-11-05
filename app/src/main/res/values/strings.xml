@@ -5,6 +5,10 @@
     <string name="onboarding_title">Get shit done with Firebucket!</string>
     <string name="onboarding_cta_register">Create an account</string>
 
+    <!-- Registration -->
+    <string name="register">Create an account</string>
+    <string name="register_cta">Register</string>
+
     <!-- Login -->
     <string name="login">Login</string>
     <string name="login_cta">Sign In</string>

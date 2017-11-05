@@ -9,9 +9,9 @@ import android.support.v4.app.FragmentTransaction;
  * Created by adityahadi on 04/11/17.
  */
 
-public class FragmentUtil {
+public class FragmentHelper {
 
-    static Logger logger = new Logger("FragmentUtil");
+    static Logger logger = new Logger(FragmentHelper.class.getSimpleName());
 
     public static void attachFragment(
             FragmentActivity fragmentActivity,
@@ -39,21 +39,21 @@ public class FragmentUtil {
         }
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        if (fragmentManager.findFragmentByTag(fragmentTAG) == null || clearBackStack) {
-            // logger.error("Fragment is not added, add it: " + fragmentTAG);
+        if (!fragmentManager.popBackStackImmediate(fragmentTAG, 0)
+                || fragmentManager.findFragmentByTag(fragmentTAG) == null
+                || clearBackStack) {
+            logger.error("Fragment is not added, add it: " + fragmentTAG);
             fragmentTransaction.replace(containerViewId, fragment, fragmentTAG);
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             fragmentTransaction.addToBackStack(fragmentTAG);
             fragmentTransaction.commit();
         } else {
-            // logger.error("Fragment already added, show it");
-            fragmentTransaction.show(fragment);
-            fragmentTransaction.commit();
+            logger.error("Fragment already added, show it: " + fragmentTAG);
         }
     }
 
-    public void removeFragmentFromBackStack(FragmentActivity fragmentActivity, String fragmentTAG) {
+    public static int getBackStackEntryCount(FragmentActivity fragmentActivity) {
         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
-        fragmentManager.popBackStack(fragmentTAG, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        return fragmentManager.getBackStackEntryCount();
     }
 }

@@ -12,10 +12,14 @@ public interface OnBoardingContract {
     interface View extends BaseView<Presenter> {
         void openHomeActivity();
 
-        void openLogInFragment();
+        void openLoginFragment();
+
+        void openSignupFragment();
     }
 
     interface Presenter extends BasePresenter {
-        void openLogInFragment();
+        void openLoginFragment();
+
+        void openSignupFragment();
     }
 }

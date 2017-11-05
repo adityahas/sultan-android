@@ -32,7 +32,7 @@
             android:text="@string/login" />
 
         <TextView
-            android:id="@+id/textview_cta_register"
+            android:id="@+id/textview_cta_signup"
             style="@style/OnBoardingCtaRegister"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/material_design_keyline_one"

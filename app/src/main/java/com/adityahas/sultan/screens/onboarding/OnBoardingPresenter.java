@@ -29,7 +29,12 @@ public class OnBoardingPresenter implements OnBoardingContract.Presenter {
     }
 
     @Override
-    public void openLogInFragment() {
-        view.openLogInFragment();
+    public void openLoginFragment() {
+        view.openLoginFragment();
+    }
+
+    @Override
+    public void openSignupFragment() {
+        view.openSignupFragment();
     }
 }

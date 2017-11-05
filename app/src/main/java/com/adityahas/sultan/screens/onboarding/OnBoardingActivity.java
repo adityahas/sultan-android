@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 
 import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseActivity;
-import com.adityahas.sultan.utilities.FragmentUtil;
+import com.adityahas.sultan.utilities.FragmentHelper;
 import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
@@ -32,8 +32,15 @@ public class OnBoardingActivity extends BaseActivity {
         setContentView(R.layout.activity_onboarding);
         ButterKnife.bind(this);
 
-        FragmentUtil.attachFragment(this, R.id.content_frame, OnBoardingFragment.newInstance());
+        FragmentHelper.attachFragment(this, R.id.content_frame, OnBoardingFragment.newInstance(), true);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        if (FragmentHelper.getBackStackEntryCount(this) < 2) {
+            finish();
+        } else {
+            super.onBackPressed();
+        }
+    }
 }

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseFragment;
 import com.adityahas.sultan.screens.home.HomeActivity;
-import com.adityahas.sultan.utilities.FragmentUtil;
+import com.adityahas.sultan.utilities.FragmentHelper;
 import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
@@ -71,8 +71,13 @@ public class OnBoardingFragment extends BaseFragment implements OnBoardingContra
     }
 
     @OnClick(R.id.button_cta_login)
-    public void onButtonLoginClick() {
-        presenter.openLogInFragment();
+    public void onLoginClick() {
+        presenter.openLoginFragment();
+    }
+
+    @OnClick(R.id.textview_cta_signup)
+    public void onSignupClick() {
+        presenter.openSignupFragment();
     }
 
     @Override
@@ -81,7 +86,12 @@ public class OnBoardingFragment extends BaseFragment implements OnBoardingContra
     }
 
     @Override
-    public void openLogInFragment() {
-        FragmentUtil.attachFragment(getActivity(), R.id.content_frame, LogInFragment.newInstance());
+    public void openLoginFragment() {
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, LogInFragment.newInstance());
+    }
+
+    @Override
+    public void openSignupFragment() {
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, SignUpFragment.newInstance());
     }
 }

@@ -8,7 +8,8 @@ import android.view.ViewGroup;
 
 import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseFragment;
-import com.adityahas.sultan.utilities.FragmentUtil;
+import com.adityahas.sultan.utilities.FragmentHelper;
+import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -18,6 +19,8 @@ import butterknife.OnClick;
  */
 
 public class LogInFragment extends BaseFragment implements LogInContract.View {
+
+    Logger logger = new Logger(this);
 
     LogInContract.Presenter presenter;
 
@@ -68,7 +71,8 @@ public class LogInFragment extends BaseFragment implements LogInContract.View {
     }
 
     @OnClick(R.id.cta_login)
-    public void onButtonLoginClick() {
-        FragmentUtil.attachFragment(getActivity(), R.id.content_frame, LogInFragment.newInstance(), true);
+    public void onLoginClick() {
+        logger.error("Login button clicked");
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, SignUpFragment.newInstance());
     }
 }
