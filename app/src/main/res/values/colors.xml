@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Material Design related -->
-    <color name="colorPrimary">#c63a3a</color>
-    <color name="colorPrimaryDark">#a12f2f</color>
-    <color name="colorAccent">#ffcb2b</color>
+    <color name="colorPrimary">#48b0ff</color>
+    <color name="colorPrimaryDark">#006aac</color>
+    <color name="colorAccent">#d5c4ff</color>
 </resources>
