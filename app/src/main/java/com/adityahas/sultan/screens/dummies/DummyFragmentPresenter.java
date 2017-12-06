@@ -1,18 +1,16 @@
 package com.adityahas.sultan.screens.dummies;
 
-import com.adityahas.sultan.screens.onboarding.LogInContract;
-
 /**
  * Created by adityahadi on 05/11/17.
  */
 
-public class DummyFragmentPresenter implements LogInContract.Presenter {
+public class DummyFragmentPresenter implements DummyFragmentContract.Presenter {
 
-    private final LogInContract.View view;
+    private final DummyFragmentContract.View view;
 
-    public DummyFragmentPresenter(LogInContract.View view) {
-        this.view = view;
-        this.view.setPresenter(this);
+    public DummyFragmentPresenter(DummyFragmentContract.View v) {
+        view = v;
+        view.setPresenter(this);
     }
 
     @Override

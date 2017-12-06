@@ -7,13 +7,15 @@ import com.adityahas.sultan.base.BaseView;
  * Created by adityahadi on 05/11/17.
  */
 
-public interface LogInContract {
+public interface LoginContract {
 
     interface View extends BaseView<Presenter> {
-
+        void onLoginSuccess();
     }
 
     interface Presenter extends BasePresenter {
+        void doLogin();
 
+        void onLoginSuccess();
     }
 }

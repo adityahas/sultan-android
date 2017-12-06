@@ -7,9 +7,9 @@ import com.adityahas.sultan.base.BaseView;
  * Created by adityahadi on 05/11/17.
  */
 
-public class SignUpContract {
+public class SignupContract {
 
-    interface View extends BaseView<LogInContract.Presenter> {
+    interface View extends BaseView<SignupContract.Presenter> {
 
     }
 

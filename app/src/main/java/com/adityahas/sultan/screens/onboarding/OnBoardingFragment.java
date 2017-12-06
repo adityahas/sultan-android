@@ -87,11 +87,11 @@ public class OnBoardingFragment extends BaseFragment implements OnBoardingContra
 
     @Override
     public void openLoginFragment() {
-        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, LogInFragment.newInstance());
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, LoginFragment.newInstance());
     }
 
     @Override
     public void openSignupFragment() {
-        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, SignUpFragment.newInstance());
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, SignupFragment.newInstance());
     }
 }

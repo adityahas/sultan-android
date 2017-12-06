@@ -18,17 +18,17 @@ import butterknife.OnClick;
  * Created by adityahadi on 05/11/17.
  */
 
-public class SignUpFragment extends BaseFragment implements LogInContract.View {
+public class SignupFragment extends BaseFragment implements SignupContract.View {
 
     Logger logger = new Logger(this);
 
-    LogInContract.Presenter presenter;
+    SignupContract.Presenter presenter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new LogInPresenter(this);
+        presenter = new SignupPresenter(this);
     }
 
     @Nullable
@@ -54,7 +54,7 @@ public class SignUpFragment extends BaseFragment implements LogInContract.View {
     }
 
     @Override
-    public void setPresenter(LogInContract.Presenter presenter) {
+    public void setPresenter(SignupContract.Presenter presenter) {
 
     }
 
@@ -63,8 +63,8 @@ public class SignUpFragment extends BaseFragment implements LogInContract.View {
 
     }
 
-    public static SignUpFragment newInstance() {
-        SignUpFragment fragment = new SignUpFragment();
+    public static SignupFragment newInstance() {
+        SignupFragment fragment = new SignupFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -77,6 +77,6 @@ public class SignUpFragment extends BaseFragment implements LogInContract.View {
 
     @OnClick(R.id.textview_cta_signup)
     public void onLoginClick() {
-        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, LogInFragment.newInstance());
+        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, LoginFragment.newInstance());
     }
 }

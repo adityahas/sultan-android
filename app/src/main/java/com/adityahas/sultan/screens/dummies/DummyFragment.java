@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 
 import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseFragment;
-import com.adityahas.sultan.screens.onboarding.LogInContract;
-import com.adityahas.sultan.screens.onboarding.LogInPresenter;
 import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
@@ -18,17 +16,17 @@ import butterknife.ButterKnife;
  * Created by adityahadi on 05/11/17.
  */
 
-public class DummyFragment extends BaseFragment implements LogInContract.View {
+public class DummyFragment extends BaseFragment implements DummyFragmentContract.View {
 
     Logger logger = new Logger(this);
 
-    LogInContract.Presenter presenter;
+    DummyFragmentContract.Presenter presenter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new LogInPresenter(this);
+        presenter = new DummyFragmentPresenter(this);
     }
 
     @Nullable
@@ -53,7 +51,7 @@ public class DummyFragment extends BaseFragment implements LogInContract.View {
     }
 
     @Override
-    public void setPresenter(LogInContract.Presenter presenter) {
+    public void setPresenter(DummyFragmentContract.Presenter presenter) {
 
     }
 

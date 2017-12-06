@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseFragment;
-import com.adityahas.sultan.utilities.FragmentHelper;
 import com.adityahas.sultan.utilities.Logger;
 
 import butterknife.ButterKnife;
@@ -18,17 +17,17 @@ import butterknife.OnClick;
  * Created by adityahadi on 05/11/17.
  */
 
-public class LogInFragment extends BaseFragment implements LogInContract.View {
+public class LoginFragment extends BaseFragment implements LoginContract.View {
 
     Logger logger = new Logger(this);
 
-    LogInContract.Presenter presenter;
+    LoginContract.Presenter presenter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new LogInPresenter(this);
+        presenter = new LoginPresenter(this);
     }
 
     @Nullable
@@ -54,7 +53,7 @@ public class LogInFragment extends BaseFragment implements LogInContract.View {
     }
 
     @Override
-    public void setPresenter(LogInContract.Presenter presenter) {
+    public void setPresenter(LoginContract.Presenter presenter) {
 
     }
 
@@ -63,8 +62,8 @@ public class LogInFragment extends BaseFragment implements LogInContract.View {
 
     }
 
-    public static LogInFragment newInstance() {
-        LogInFragment fragment = new LogInFragment();
+    public static LoginFragment newInstance() {
+        LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -72,7 +71,11 @@ public class LogInFragment extends BaseFragment implements LogInContract.View {
 
     @OnClick(R.id.cta_login)
     public void onLoginClick() {
-        logger.error("Login button clicked");
-        FragmentHelper.attachFragment(getActivity(), R.id.content_frame, SignUpFragment.newInstance());
+        presenter.doLogin();
+    }
+
+    @Override
+    public void onLoginSuccess() {
+
     }
 }
