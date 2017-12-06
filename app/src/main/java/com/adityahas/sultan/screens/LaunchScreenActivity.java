@@ -1,7 +1,8 @@
-package com.adityahas.sultan;
+package com.adityahas.sultan.screens;
 
 import android.os.Bundle;
 
+import com.adityahas.sultan.R;
 import com.adityahas.sultan.base.BaseActivity;
 import com.adityahas.sultan.screens.onboarding.OnBoardingActivity;
 import com.adityahas.sultan.utilities.Logger;

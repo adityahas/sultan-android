@@ -32,11 +32,8 @@ public class FragmentHelper {
 
         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
 
-        if (clearBackStack) {
-            for (int i = 0; i < fragmentManager.getBackStackEntryCount(); i++) {
-                fragmentManager.popBackStack();
-            }
-        }
+        if (clearBackStack)
+            fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         if (!fragmentManager.popBackStackImmediate(fragmentTAG, 0)
