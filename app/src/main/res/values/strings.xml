@@ -2,7 +2,7 @@
     <string name="app_name">Sultan</string>
 
     <!-- OnBoarding -->
-    <string name="onboarding_title">Get shit done with Firebucket!</string>
+    <string name="onboarding_title">Mobile POS app for your store!</string>
     <string name="onboarding_cta_register">Create an account</string>
 
     <!-- Registration -->
@@ -14,4 +14,8 @@
     <string name="login_cta">Sign In</string>
     <string name="hint_email_address">Email address</string>
     <string name="hint_password">Password</string>
+
+    <!-- Errors -->
+    <string name="error_login_invalid_email">Please provide a valid email address</string>
+    <string name="error_login_invalid_password">Please provide a valid password</string>
 </resources>

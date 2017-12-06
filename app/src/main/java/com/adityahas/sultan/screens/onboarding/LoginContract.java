@@ -11,11 +11,18 @@ public interface LoginContract {
 
     interface View extends BaseView<Presenter> {
         void onLoginSuccess();
+
+        void setErrorEmailField();
+
+        void setErrorPasswordField();
+
+        void setValidEmailField();
+
+        void setValidPasswordField();
     }
 
     interface Presenter extends BasePresenter {
-        void doLogin();
-
+        void doLogin(String email, String password);
         void onLoginSuccess();
     }
 }

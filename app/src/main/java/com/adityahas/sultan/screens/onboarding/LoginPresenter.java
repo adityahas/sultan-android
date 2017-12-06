@@ -24,7 +24,22 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void doLogin() {
+    public void doLogin(String email, String password) {
+        email = email.trim();
+        password = password.trim();
+
+        view.setValidEmailField();
+        if (email.isEmpty()) {
+            view.setErrorEmailField();
+            return;
+        }
+
+        view.setValidPasswordField();
+        if (password.isEmpty()) {
+            view.setErrorPasswordField();
+            return;
+        }
+
         onLoginSuccess();
     }
 

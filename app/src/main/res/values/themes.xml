@@ -19,4 +19,8 @@
     <style name="OnBoardingActivityTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
+
+    <style name="HomeActivityTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
 </resources>

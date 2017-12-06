@@ -26,6 +26,11 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".screens.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/HomeActivityTheme" />
+
     </application>
 
 </manifest>
