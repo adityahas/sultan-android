@@ -10,10 +10,20 @@ import com.adityahas.sultan.base.BaseView;
 public class SignupContract {
 
     interface View extends BaseView<SignupContract.Presenter> {
+        void onSignupSuccess();
 
+        void setErrorEmailField();
+
+        void setErrorPasswordField();
+
+        void setValidEmailField();
+
+        void setValidPasswordField();
     }
 
     interface Presenter extends BasePresenter {
+        void doSignup(String email, String password);
 
+        void onSignupSuccess();
     }
 }
