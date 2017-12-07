@@ -8,9 +8,9 @@ public class SignupPresenter implements SignupContract.Presenter {
 
     private final SignupContract.View view;
 
-    public SignupPresenter(SignupContract.View v) {
-        view = v;
-        view.setPresenter(this);
+    public SignupPresenter(SignupContract.View view) {
+        this.view = view;
+        this.view.setPresenter(this);
     }
 
     @Override

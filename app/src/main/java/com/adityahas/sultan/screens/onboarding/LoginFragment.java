@@ -35,7 +35,9 @@ public class LoginFragment extends BaseFragment implements LoginContract.View {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new LoginPresenter(this);
+
+        // Create the presenter
+        new LoginPresenter(this);
     }
 
     @Nullable
@@ -62,7 +64,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View {
 
     @Override
     public void setPresenter(LoginContract.Presenter presenter) {
-
+        this.presenter = presenter;
     }
 
     @Override
@@ -88,6 +90,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View {
     @Override
     public void onLoginSuccess() {
         HomeActivity.start(getContext());
+        getActivity().finish();
     }
 
     @Override

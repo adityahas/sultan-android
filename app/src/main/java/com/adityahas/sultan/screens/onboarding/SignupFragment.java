@@ -37,7 +37,9 @@ public class SignupFragment extends BaseFragment implements SignupContract.View 
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new SignupPresenter(this);
+
+        // Create the presenter
+        new SignupPresenter(this);
     }
 
     @Nullable
@@ -95,6 +97,7 @@ public class SignupFragment extends BaseFragment implements SignupContract.View 
     @Override
     public void onSignupSuccess() {
         HomeActivity.start(getContext());
+        getActivity().finish();
     }
 
     @Override

@@ -8,9 +8,9 @@ public class DummyFragmentPresenter implements DummyFragmentContract.Presenter {
 
     private final DummyFragmentContract.View view;
 
-    public DummyFragmentPresenter(DummyFragmentContract.View v) {
-        view = v;
-        view.setPresenter(this);
+    public DummyFragmentPresenter(DummyFragmentContract.View view) {
+        this.view = view;
+        this.view.setPresenter(this);
     }
 
     @Override

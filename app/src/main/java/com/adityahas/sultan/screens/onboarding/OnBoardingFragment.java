@@ -29,7 +29,9 @@ public class OnBoardingFragment extends BaseFragment implements OnBoardingContra
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getArgs(savedInstanceState);
-        presenter = new OnBoardingPresenter(this);
+
+        // Create the presenter
+        new OnBoardingPresenter(this);
     }
 
     @Nullable
